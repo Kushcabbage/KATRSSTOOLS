@@ -6,7 +6,7 @@ import os
 ####https://kickass.unblocked.li/usearch/%22DC%20Week%2B%22/?rss=1.xml
 
 def Fetchnextentry(currentnum,url):
-    os.system('cls' if os.name == 'nt' else 'clear')
+    print("\n\n")
     ent=currentnum+1
 
     d = feedparser.parse(url)
