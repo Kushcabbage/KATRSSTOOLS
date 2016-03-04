@@ -138,12 +138,12 @@ def fetchfromlistfile():
         itemname=itemname[:-1]
 
         lastfile=itemname+".txt"
-        print(itemname,lastfile,sep='')
+
+        lastfile="RSSDATA/"+lastfile
+        #print("read",lastfile)
         last=linecache.getline(lastfile, 1)
-
-
-
-        #finally:
+        if last!="":
+            print ("Last Download::",last)
 
 
         x += 1
